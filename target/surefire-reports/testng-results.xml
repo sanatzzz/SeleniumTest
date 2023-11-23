@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="AOSTest" duration-ms="12961" started-at="2023-11-23T10:06:27Z" finished-at="2023-11-23T10:06:40Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="12961" started-at="2023-11-23T10:06:27Z" finished-at="2023-11-23T10:06:40Z">
+      <class name="AOSTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:AOSTest@35fb3008]" name="login" duration-ms="12933" started-at="2023-11-23T10:06:27Z" finished-at="2023-11-23T10:06:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- AOSTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- AOSTest -->
+</testng-results>

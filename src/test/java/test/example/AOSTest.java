@@ -16,10 +16,11 @@ public class AOSTest {
         driver.get("http://nimbusserver.aos.com:8000/#/");
         Thread.sleep(5000);
         WebElement profile =driver.findElement(By.id("menuUser"));
-        WebElement username=driver.findElement(By.id("username"));
-        WebElement password=driver.findElement(By.id("password"));
-        WebElement login=driver.findElement(By.name("sign_in_btnundefined"));
         profile.click();
+        Thread.sleep(4000);
+        WebElement username=driver.findElement(By.name("username"));
+        WebElement password=driver.findElement(By.name("password"));
+        WebElement login=driver.findElement(By.id("sign_in_btnundefined"));
         username.sendKeys("admin");
         password.sendKeys("adm1n");
           login.click();
