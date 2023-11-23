@@ -13,16 +13,18 @@ public class AOSTest {
         WebDriver driver=new ChromeDriver(options);
 
         // driver.manage().window().maximize();
-        driver.get("https://www.browserstack.com/users/sign_in");
+        driver.get("http://nimbusserver.aos.com:8000/#/");
         Thread.sleep(5000);
-        WebElement username=driver.findElement(By.id("user_email_login"));
-        WebElement password=driver.findElement(By.id("user_password"));
-        WebElement login=driver.findElement(By.name("commit"));
-        username.sendKeys("abc@gmail.com");
-        password.sendKeys("your_password");
-        //   login.click();
-        String actualUrl="https://live.browserstack.com/dashboard";
-        String expectedUrl= driver.getCurrentUrl();
+        WebElement profile =driver.findElement(By.id("menuUser"));
+        WebElement username=driver.findElement(By.id("username"));
+        WebElement password=driver.findElement(By.id("password"));
+        WebElement login=driver.findElement(By.name("sign_in_btnundefined"));
+        profile.click();
+        username.sendKeys("admin");
+        password.sendKeys("adm1n");
+          login.click();
+        //String actualUrl="https://live.browserstack.com/dashboard";
+        //String expectedUrl= driver.getCurrentUrl();
         // Assert.assertEquals(expectedUrl,actualUrl);
     }
 }
