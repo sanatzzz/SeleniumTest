@@ -19,7 +19,7 @@ jobs:
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v4
         with:
-         path: '**/TEST*.xml'
+         path: '**/artifacts/'
       - name: GitHub Actions ALM Octane Integration
         # Reference to our public GitHub action
         uses: MicroFocus/alm-octane-github-actions-integration@v1.0
