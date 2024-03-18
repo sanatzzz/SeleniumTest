@@ -22,8 +22,5 @@ public class AOSTest {
         password.sendKeys("adm1n");
         WebElement login=driver.findElement(By.id("sign_in_btn"));
           login.click();
-        //String actualUrl="https://live.browserstack.com/dashboard";
-        //String expectedUrl= driver.getCurrentUrl();
-        // Assert.assertEquals(expectedUrl,actualUrl);
     }
 }
