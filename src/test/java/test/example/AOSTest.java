@@ -10,8 +10,14 @@ public class AOSTest {
     public void login() throws InterruptedException {
         WebDriver driver;
         WebDriverManager.chromedriver().setup();
-        //options.setExperimentalOption("debuggerAddress", "127.0.0.1:9222");
-        driver=new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("start-maximized"); // open Browser in maximized mode
+        options.addArguments("disable-infobars"); // disabling infobars
+        options.addArguments("--disable-extensions"); // disabling extensions
+        options.addArguments("--disable-gpu"); // applicable to windows os only
+        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+        options.addArguments("--no-sandbox"); // Bypass OS security model
+        driver = new ChromeDriver(options);
 
         // driver.manage().window().maximize();
         driver.get("https://www.advantageonlineshopping.com/#/");
