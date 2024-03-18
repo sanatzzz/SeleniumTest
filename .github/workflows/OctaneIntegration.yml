@@ -33,4 +33,4 @@ jobs:
           # The url that the CI Server in ALM Octane will point to
           serverBaseUrl: https://github.com/sanatzzz/SeleniumTest
           # Pattern for identifying JUnit style report files for test result injection in ALM Octane
-          unitTestResultsGlobPattern: "**/*.xml"
+          unitTestResultsGlobPattern: "SeleniumTest/target/surefire-reports/junitreports/*.xml"
