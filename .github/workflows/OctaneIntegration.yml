@@ -23,7 +23,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
          name: artifact
-         path: '**/artifacts'
+         path: 'artifacts/'
       - name: GitHub Actions ALM Octane Integration
         # Reference to our public GitHub action
         uses: MicroFocus/alm-octane-github-actions-integration@v1.0
