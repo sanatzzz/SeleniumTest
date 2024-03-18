@@ -11,10 +11,10 @@ public class AOSTest {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         //options.setExperimentalOption("debuggerAddress", "127.0.0.1:9222");
-        WebDriver driver=new ChromeDriver(options);
+        WebDriver driver=new ChromeDriver();
 
         // driver.manage().window().maximize();
-        driver.get("http://nimbusserver.aos.com:8000/#/");
+        driver.get("https://www.advantageonlineshopping.com/#/");
         Thread.sleep(5000);
         WebElement profile =driver.findElement(By.id("menuUser"));
         profile.click();
