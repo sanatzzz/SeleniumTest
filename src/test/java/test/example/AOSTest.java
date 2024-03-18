@@ -2,14 +2,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.annotations.Test;
 public class AOSTest {
     @Test
     public void login() throws InterruptedException {
         WebDriver driver;
-        WebDriverManager.firefoxdriver().setup();
-        driver = new FirefoxDriver();
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
 
         // driver.manage().window().maximize();
         driver.get("https://www.advantageonlineshopping.com/#/");
