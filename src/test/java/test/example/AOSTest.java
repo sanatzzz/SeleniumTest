@@ -1,23 +1,15 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.annotations.Test;
 public class AOSTest {
     @Test
     public void login() throws InterruptedException {
         WebDriver driver;
-        WebDriverManager.chromedriver().setup();
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-        options.addArguments("disable-infobars"); // disabling infobars
-        options.addArguments("--disable-extensions"); // disabling extensions
-        options.addArguments("--disable-gpu"); // applicable to windows os only
-        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-        options.addArguments("--no-sandbox"); // Bypass OS security model
-        driver = new ChromeDriver(options);
+        WebDriverManager.firefoxdriver().setup();
+        driver = new FirefoxDriver();
 
         // driver.manage().window().maximize();
         driver.get("https://www.advantageonlineshopping.com/#/");
