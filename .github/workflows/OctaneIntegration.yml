@@ -31,11 +31,11 @@ jobs:
         # Config parameters for the integration
         with:
           # ALM Octane connection data
-          octaneUrl: 'https://almoctane-eur.saas.microfocus.com'
-          octaneSharedSpace: 416002
-          octaneWorkspace: 27001
-          octaneClientId: ${{secrets.ALM_OCTANE_CLIENT_ID}}
-          octaneClientSecret: ${{secrets.ALM_OCTANE_CLIENT_SECRET}}
+          octaneUrl: 'http://192.168.2.131:8085/'
+          octaneSharedSpace: 1001
+          octaneWorkspace: 1002
+          octaneClientId: ${{secrets.ALM_OCTANE_CLIENT_ID_VM}}
+          octaneClientSecret: ${{secrets.ALM_OCTANE_CLIENT_SECRET_VM}}
           # Automatically provided GitHub token
           githubToken: ${{secrets.GITHUB_TOKEN}}
           # The url that the CI Server in ALM Octane will point to
