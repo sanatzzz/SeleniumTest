@@ -20,7 +20,7 @@ public class AOSTest {
         WebElement password=driver.findElement(By.name("password"));
         username.sendKeys("admin");
         password.sendKeys("adm1n");
-        WebElement login=driver.findElement(By.id("sign_in_btn"));
+        WebElement login=driver.findElement(By.id("sign_in_btn1"));
           login.click();
     }
 }
