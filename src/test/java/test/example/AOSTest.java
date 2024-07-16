@@ -11,6 +11,7 @@ public class AOSTest {
         WebDriver driver;
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.get("https://www.advantageonlineshopping.com/#/");
         Thread.sleep(5000);
         WebElement profile =driver.findElement(By.id("menuUser"));
