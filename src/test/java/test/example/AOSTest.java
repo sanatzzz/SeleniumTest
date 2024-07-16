@@ -13,7 +13,7 @@ public class AOSTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.advantageonlineshopping.com/#/");
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         WebElement profile =driver.findElement(By.id("menuUser"));
         profile.click();
         Thread.sleep(4000);
